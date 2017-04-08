@@ -1,0 +1,630 @@
+﻿@{
+    ViewBag.Title = "Weatherchime";
+}
+
+<script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css">
+<style>
+	.body-content {
+		padding-top: 30px;
+	}
+
+	.albumLinks a {
+		display: block;
+	}
+</style>
+<div class="container  body-content">
+	<div class=col-md-6 col-sm-12"">
+		<div id="albumCover">
+			<img class="img-responsive" src="~/Content/CapulinAlbumArt.jpg"/>
+		</div>
+		<h1>New Album!!</h1>
+		@*<iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/16324890&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>*@
+		<div class="albumLinks">
+			<a href="https://www.soundcloud.com/riadosa">Soundcloud</a>
+			<a href="https://riadosa.bandcamp.com/">BandCamp</a>
+			<p>Coming soon to streaming!</p>
+		</div>
+	</div>
+	<div class="col-md-6 col-sm-12">
+		<div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+							Album Credits
+						</a>
+					</h4>
+				</div>
+				<div id="collapse1" class="panel-collapse collapse">
+					<div class="panel-body">
+						<div>
+							<div>
+								<div>Album art by EvanK! with digital assistance from Dax</div> 
+								<div>All songs by Trevor Williams except where noted</div>
+								<div>Produced by Solomon Dorsey and J.P. Gilbert</div>
+							</div>
+							<div class="song">
+								<p class="number">1</p>
+								<p class="song-title">Capulin</p>
+								<p>Trevor: Acoustic and Electric Guitar, Vocals, Ambient Sounds</p>
+								<p>Ben Peeler: Weissenborn Guitar, Pedal Steel</p>
+								<p>Solomon Dorsey: Drums, Bass</p>
+								<p>Alissa Nordmoe: Background Vocals</p>
+							</div>
+							<div class="song">
+								<p class="number">2</p>
+								<p class="song-title">The Longest Train</p>
+								<p>Trevor: Vocal, Acoustic Guitar, Electric Guitar, Noises</p>
+								<p>Solomon Dorsey: Drums, Bass, Keyboards</p>
+								<p>Lily Maase: Electric Guitar</p>
+								<p>Ben Peeler: Pedal Steel Guitar</p>
+								<p>Alissa Nordmoe: Background Vocals</p>
+							</div>
+							<div class="song">
+								<p class="number">3</p>
+								<p class="song-title">86 Cadillac DeVille(Anodyne)</p>
+								<p>Trevor: Vocals, Acoustic Guitar, Harmonica, Tumbii, Rainstick, Tambourine, Bass</p>
+								<p>Tim Monaghan: Drums</p>
+								<p>JP Gilbert: Electric Guitar</p>
+								<p>Ben Peeler: Pedal Steel Guitar</p>
+								<p>Alex Hills: Keys</p>
+							</div>
+							<div class="song">
+								<p class="number">4</p>
+								<p class="song-title">Me and Jeff(Train 45)</p>
+								<p>Trevor Williams: Vocal, Guitar</p>
+							</div>
+							<div class="song">
+								<p class="number">5</p>
+								<p class="song-title">Everyone’s a Lightweight(Except for me)</p>
+								<p>Trevor Williams: Acoustic and Electric Guitar, Vocals, Bass, Other Sounds</p>
+								<p>Alissa Nordmoe: Background Vocals</p>
+								<p>Ezer Lichtenstein: Drums</p>
+								<p>Alex Hills: Keyboards</p>
+								<p>Lily Maase: Electric Guitar</p>
+								<p>JP Gilbert: Electric Guitar</p>
+							</div>
+							<div class="song">
+								<p class="number">6</p>
+								<p class="song-title">Stay Right Here With You</p>
+								<p>Trevor: Vocal, Acoustic Guitar, Bass</p>
+								<p>Leslie Stevens: Vocal</p>
+								<p>Alex Hills: Keyboards</p>
+								<p>JP Gilbert: Electric Guitar</p>
+								<p>Ben Peeler: Steel Guitar</p>
+								<p>Tim Monaghan: Drums</p>
+								<p>Crawford’s Bar Los Angeles: Crowd Noise</p>
+							</div>
+							<div class="song">
+								<p class="number">7</p>
+								<p class="song-title">Matte White Beamer</p>
+								<p>Trevor: Acoustic and Electric Guitars, Vocals</p>
+								<p>Tim Monaghan: Drums</p>
+								<p>Alex Hills: Keyboards</p>
+								<p>Alissa Nordmoe: Background Vocals</p>
+								<p>Nick Gonzales: Background Vocals, chorus melody</p>
+							</div>
+							<div class="song">
+								<p class="number">8</p>
+								<p class="song-title">Margaret Mary</p>
+								<p>Trevor Williams: Vocals, Percussion, Bass</p>
+								<p>JP Gilbert: Acoustic Guitar</p>
+								<p>Ben Peeler: Weissenborn Guitar</p>
+								<p>Alissa Nordmoe: Background Vocals </p>
+							</div>
+							<div class="song">
+								<p class="number">9</p>
+								<p class="song-title">Sonny</p>
+								<p>Trevor: Vocals, Acoustic Guitar, Pedal Steel, Noises</p>
+								<p>Solomon Dorsey: Drums, Electric Guitar, Tenor Guitar, Bass</p>
+								<p>JP Gilbert: Electric Guitar</p>
+							</div>
+							<div class="song">
+								<p class="number">10</p>
+								<p class="song-title">Hotel Lafayette</p>
+								<p>Trevor: Vocals, Acoustic and Electric Guitar, Drum Programming, Tambourine, Ambient Sounds, Bass</p>
+								<p>Ezer Lichtenstein: Drums, Ambient Sounds</p>
+								<p>Brian Kamerer: Ambient Sounds</p>
+								<p>Alissa Nordmoe: Background Vocals</p>
+								<p>Solomon Dorsey: Background Vocals</p>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+							Lyrics
+						</a>
+					</h4>
+				</div>
+				<div id="collapse2" class="panel-collapse collapse">
+					<div class="panel-body">
+						<div class="song">
+							<p class="number">1</p>
+							<div class="song-title">
+								Anasazi Highway
+							</div>
+
+							<div class="stanza">
+								<p>We were born in the shadows of the sleeping Capulin, might have been a thousand dusty years ago</p>
+								<p>And our mother was the mountain she was ornery and mean and was all that we could do for getting out there</p>
+								<p>So we lighted out one Sunday rolling on a winter's storm and we floated all the way down in to Clayton</p>
+								<p>And the streets were dark and empty and the courthouse sulked and loomed, but to us it was the stuff of revelation</p>
+							</div>
+
+							<div class="stanza">
+								<p>So we hired on washing dishes down at the old Hotel you know the one with the pictures of the Hanging*</p>
+								<p>And we lived on green chile and what we borrowed from the bar and it was always only just enough to make it</p>
+								<p>Ah but the folks all drank their coffee and smoked their big cigars and talked about the trains that they were taking</p>
+								<p>4:15 to Colorado, 9:05 to Santa Fe it was a big wide world out there beyond our station</p>
+							</div>
+
+							<div class="stanza">
+								<p>Lai-de-lai stranded out along the Anasazi highway</p>
+								<p>We roll on, we roll on</p>
+							</div>
+
+							<div class="stanza">
+								<p>Another Sunday pitching horseshoes at the road house on the route having no place else to quell these restless feelings</p>
+								<p>When we spied us this young cowboy all dressed up to go to town getting loud with all the whiskey he was drinking</p>
+								<p>So we jumped him after close took his belt buckle and his dough and we left him there a-bleeding in the moonlight</p>
+								<p>I wouldn't say it was the plan we never thought that far ahead, all we knew was in the morning we were leaving</p>
+							</div>
+
+							<div class="stanza">
+								<p>We were out before the dawn, caught a trucker flagged him down, and he took us all the way to Tucumcari</p>
+								<p>And we brought that silver buckle to the first pawn shop we found just trying to see if we could raise a dollar</p>
+								<p>But the counter man was wise and he looked us in the eyes he said now wait right here while I just make a phone call</p>
+								<p>We took the hint and hit the road and it was not long you know before all we could feel was hope evaporating</p>
+							</div>
+
+							<div class="stanza">
+								<p>Lai-de-lai stranded out along the Anasazi highway</p>
+								<p>We roll on, we roll on</p>
+							</div>
+
+							<div class="stanza">
+								<p>*Pictures of the hanging of the notorious outlaw Black Jack Ketchum in Clayton, NM. </p>
+							</div>
+						</div>
+
+						<div class="song">
+							<p class="number">2</p>
+							<div class="song-title">
+								The Longest Train
+							</div>
+
+							<div class="stanza">
+								<p>When I set out alone it was Saturday morning I said I would call now and then</p>
+								<p>But I didn't call once and I cannot imagine what good it would do if I did</p>
+							</div>
+
+							<div class="stanza">
+								<p>The longest train is coming to carry you away</p>
+							</div>
+
+							<div class="stanza">
+								<p>If fire rains down on the red river valley and dries up the old Salton Sea</p>
+								<p>If everything sticks in the muddy grey twilight or you happen just to lose sight of me</p>
+							</div>
+
+							<div class="stanza">
+								<p>The longest train is coming to carry you away</p>
+							</div>
+
+							<div class="stanza">
+								<p>Well this is the sound of eternal returning they heard on the back side of the moon*</p>
+								<p>When we're better off dead we're still two hearts a-burning, but here in my dreams is no use</p>
+							</div>
+
+							<div class="stanza">
+								<p>The longest train is coming to carry you away</p>
+								<p>The longest train is coming to carry you away</p>
+							</div>
+
+							<div class="stanza">
+								<p>Somewhere I'll always be true, somewhere I'll have waited for you</p>
+								<p>Somewhere I'll always be true, somewhere I'll have waited for you</p>
+								<p>Somewhere I'll always be true, somewhere I'll have waited for you</p>
+								<p>Somewhere I'll always be true, somewhere I'll have waited for you</p>
+							</div>
+
+							<div class="stanza">
+								<p>*Apollo 10 astronauts reported hearing "weird music" for an hour as they orbited the dark side of the moon out of radio contact with earth</p>
+							</div>
+						</div>
+
+						<div class="song">
+							<p class="number">3</p>
+							<div class="song-title">
+								86 Cadillac Deville (Anodyne)
+							</div>
+
+							<div class="stanza">
+								<p>Ive been thinking bout a face tattoo and an 86 Cadillac Deville</p>
+								<p>A fleur-de-lis, a hammer and sicle or a heart that says born to kill</p>
+								<p>And going down to the beach every day with my woman and a thirty pack of swill</p>
+								<p>Singing front to back, side to side, daddy, pinky ring working wood wheel</p>
+							</div>
+
+							<div class="stanza">
+								<p>Cause I was thinking bout a pay phone call I was making right around aught 4</p>
+								<p>You said come on over baby, but then you passed out and you never made to your door</p>
+								<p>So I was sleepin on the train that night thinking how I was gonna show you what for</p>
+								<p>When I should have turned around, started making big tracks, and never tried to see you anymore</p>
+							</div>
+
+							<div class="stanza">
+								<p>Anodyne</p>
+								<p>Anodyne</p>
+								<p>Anodyne</p>
+							</div>
+
+							<div class="stanza">
+								<p>I had a dream so strange that the telling could make us both obsolete</p>
+								<p>Those men in grey caught ahold of Charlie Chaplain and they turned him into elbow grease</p>
+							</div>
+
+							<div class="stanza">
+								<p>Ive been thinking bout a face tattoo and an 86 Cadillac Deville</p>
+								<p>A fleur-de-lis, a hammer and sicle or a heart that says born to kill</p>
+								<p>And going down to the beach every day with your woman and a thirty pack of swill</p>
+								<p>Singing front to back, side to side, daddy, pinky ring working wood wheel</p>
+							</div>
+
+							<div class="stanza">
+								<p>Anodyne</p>
+								<p>Anodyne</p>
+								<p>Anodyne</p>
+							</div>
+						</div>
+
+						<div class="song">
+							<p class="number">4</p>
+							<div class="song-title">
+								Train 45(Me and Jeff)
+							</div>
+
+							<div class="stanza">
+								<p>Me and Jeff caught a train, hopped a freight, stashed away</p>
+								<p>Told my mom we were headed for the weekend to Duluth</p>
+								<p>And I know I'm her only daughter, but she's hardly ever sober</p>
+								<p>So I'm hardly even sorry for the ruse</p>
+							</div>
+
+							<div class="stanza">
+								<p>We were out to find the truth, kick him in his crooked tooth</p>
+								<p>And you know the only spot that's left for all of that is New Orleans</p>
+								<p>So we got crust enough to pass, all dread and denim clad</p>
+								<p>And we sang she loves you big river more than me</p>
+							</div>
+
+							<div class="stanza">
+								<p>And that old black smoke will rise from that train 45</p>
+								<p>And you can hear my whistle blow 900 miles</p>
+							</div>
+
+							<div class="stanza">
+								<p>Summer came, summer went, I sobered up, I couldn't find a friend</p>
+								<p>And I spent more nights in the open than I'm happy to admit</p>
+								<p>And you won't believe me probably, but I never sold my body</p>
+								<p>Aw but I fairly doubt I'd tell you if I did</p>
+							</div>
+
+							<div class="stanza">
+								<p>One year on I was gettin straight, every dollar I could scrape</p>
+								<p>Playing tunes for the tourists in the quarter every day</p>
+								<p>But out-of-towners robbed the squat, took my banjo, took my pot</p>
+								<p>And I had just about as much as I could take</p>
+							</div>
+
+							<div class="stanza">
+								<p>And that old black smoke will rise from that train 45</p>
+								<p>And you can hear my whistle blow 900 miles</p>
+							</div>
+						</div>
+
+						<div class="song">
+							<p class="number">5</p>
+							<div class="song-title">
+								Everyone's a Lightweight(Except for Me)
+							</div>
+
+							<div class="stanza">
+								<p>Everyone's a lightweight except for me yeah, I had a thousand friends and they all turned out to be yeah</p>
+								<p>Everyone's a lightweight and everyone's a phony, I just drink a pint of Walker and end up at a Coney</p>
+							</div>
+
+							<div class="stanza">
+								<p>Everybody freaks when you spend a night in jail, yeah, saying maybe take a minute, get yourself together</p>
+								<p>And you can keep it yeah but I know you got your stuff, And I don't have a problem I'm not yet well aware of</p>
+							</div>
+
+							<div class="stanza">
+								<p>Tuesday the 26th, I went down alone and wildcatted all the way back home</p>
+							</div>
+
+							<div class="stanza">
+								<p>So long to my sweet one as I drift behind the waves, I will insist that we meet again some day</p>
+								<p>And if by chance you contrive somehow to evade, I will still hit you up, hit you up now and then</p>
+								<p>I will still hit you up, hit you up now and then</p>
+							</div>
+
+							<div class="stanza">
+								<p>Everyone's a lightweight except for me, Dad. I told em what you told me but they don't wanna hear that</p>
+								<p>Everybody bails when it gets a little real, huh. Everyone's a lightweight, but everybody begs and everybody steals sometimes</p>
+							</div>
+
+							<div class="stanza">
+								<p>Tuesday the 26th, I went down alone and wildcatted all the way back home</p>
+							</div>
+						</div>
+
+						<div class="song">
+							<p class="number">6</p>
+							<div class="song-title">
+								Stay Right Here With You
+							</div>
+
+							<div class="stanza">
+								<p>I must have told you a thousand times I was the rambling kind</p>
+								<p>And no warm bed or loving arms would keep me satisfied</p>
+								<p>But even though that lonesome whistle blows and just tears me in two</p>
+								<p>I'm gonna find a way to stay right here with you</p>
+							</div>
+
+							<div class="stanza">
+								<p>I'm gonna find a way to stay right by your side</p>
+								<p>I'm gonna reach down deep and open my heart wide</p>
+								<p>And even though your loving can't quite shake me like it used to do</p>
+								<p>I'm gonna find a way to stay right here with you</p>
+							</div>
+
+							<div class="stanza">
+								<p>Oh well you sing that leaving song like it just ate you up inside</p>
+								<p>But I know that tune so well that I could harmonize</p>
+								<p>And each time it comes around it feels like this should be my cue</p>
+								<p>Somehow I find a way to stay right here with you</p>
+							</div>
+
+							<div class="stanza">
+								<p>I'm gonna find a way to stay right by your side</p>
+								<p>I'm gonna reach down deep and open my heart wide</p>
+								<p>And even though your loving can't quite shake me like it used to do</p>
+								<p>I'm gonna find a way to stay right here with you</p>
+							</div>
+
+							<div class="stanza">
+								<p>Ah Honey darlin sweetheart sugar babe you know I've had enough</p>
+								<p>But each time you leave me I can't sleep I just get so messed up</p>
+								<p>So just until I sort out what's for birds and what's for true</p>
+								<p>I'm gonna hold onto that old time feeling and stay right here with you</p>
+							</div>
+
+							<div class="stanza">
+								<p>I'm gonna find a way to stay right by your side</p>
+								<p>I'm gonna reach down deep and open my heart wide</p>
+								<p>And even though your loving can't quite shake me like it used to do</p>
+								<p>I'm gonna find a way to stay right here with you</p>
+							</div>
+						</div>
+
+						<div class="song">
+							<p class="number">7</p>
+							<div class="song-title">
+								Matte White Beamer
+							</div>
+
+							<div class="stanza">
+								<p>I got a matte white Beamer, yah they call me uncle drugs</p>
+								<p>I got a blissed out beamer, so baby tell me who you love</p>
+								<p>I got a quarter tank of gas, I got a pistol in the dash</p>
+								<p>I had a rolly submariner, but I sold em both for cash</p>
+							</div>
+
+							<div class="stanza">
+								<p>I got a woman that'll claim me, if they lay me on the slab</p>
+								<p>She says that she could never blame me, oh but she don't know the half</p>
+								<p>Because her sister says she loves me, says I'm all she's waiting for</p>
+								<p>Ah but I owe their brother money, so I don't come around no more</p>
+							</div>
+
+							<div class="stanza">
+								<p>And I can't count on anyone around here anymore</p>
+							</div>
+							<div class="stanza">
+								<p>I got a real funny feeling, I'm going out of town awhile</p>
+								<p>And I'm talking ten thousand if I make a single mile</p>
+								<p>I see a palm desert trailer, I see the shores of hudson bay</p>
+								<p>I could be saving all my money or maybe pissing it away</p>
+							</div>
+							<div class="stanza">
+								<p>And I know what you're thinking, that this is some type of a scam</p>
+								<p>Ah but you don't know my heart, man, you don't know who I really am</p>
+								<p>Cause like the T-1000, I will surely rise again</p>
+								<p>So when the bottle brush is blooming, go on and ask about me then</p>
+							</div>
+							<div class="stanza">
+								<p>I can't count on anyone around here anymore</p>
+								<p>No I can't count on anyone around here anymore</p>
+							</div>
+							<div class="stanza">
+								<p>I got a matte white Beamer, yah they call me uncle drugs</p>
+								<p>I got a blissed out beamer, so baby tell me who you love</p>
+							</div>
+						</div>
+
+						<div class="song">
+							<p class="number">8</p>
+							<div class="song-title">
+								Margaret Mary
+							</div>
+							<div class="stanza">
+								<p>Margaret Mary taught medieval French at the college on the hill and if it weren't for having died I know she'd like to be there still</p>
+								<p>Well she told us about the union days when they'd fought the Pinkertons, ah but that's so long ago now only she remembers when</p>
+							</div>
+							<div class="stanza">
+								<p>Margaret owned her house in town and her brother's across the way and she took to holding on to things that most folks would throw away</p>
+								<p>It was stacked up in the living room it was piled behind the door and she left off having company cause they'd always ask what for</p>
+							</div>
+							<div class="stanza">
+								<p>The snow was on the ground the day that her furnace finally kicked and although she told nobody well the chaplain he caught wind</p>
+								<p>And he sent a man to sort it but she wouldn't let him in and the blankets piled up on the bed but the cold would not relent</p>
+							</div>
+							<div class="stanza">
+								<p>Well she took to staying up most nights at the diner near her house and she'd nap between her classes on the adjunct office couch</p>
+								<p>And she held on through another term though the winter'd took its toll and only Margaret was surprised that spring when they finally let her go</p>
+							</div>
+							<div class="stanza">
+								<p>Walking home from church on wednesday night, she fell out on the ground and at the age of 85 she passed before the week was out</p>
+								<p>And the sold her home at auction 'cause she had no next of kin and they hauled her junk of to the dump so someone else could move theirs in</p>
+							</div>
+							<div class="stanza">
+								<p>Well she never got her tenure, never held a PhD and she gave up thinking years ago true love would set her free</p>
+								<p>But Margaret taught medieval French at the College on the hill and if it weren't for having died I know she'd like to be there still</p>
+							</div>
+							<div class="stanza">
+								<p>One day certain, one day soon, this old world is gonna get the best of you</p>
+							</div>
+						</div>
+
+						<div class="song">
+							<p class="number">9</p>
+							<div class="song-title">
+								Sonny
+							</div>
+
+							<div class="stanza">
+								<p>Ya'll know Sonny, my older brother's best friends</p>
+								<p>Always showed us what he could he was the definition of a sweet sweet man</p>
+								<p>Bout the time we finished high school, they were still just hanging round</p>
+								<p>He started coming unraveled, all we could say was such a shame</p>
+							</div>
+
+							<div class="stanza">
+								<p>And then his little Annie left him, did her best to keep the kid</p>
+								<p>You could tell that he was shattered, but he'd never let you in</p>
+							</div>
+
+							<div class="stanza">
+								<p>Well he started missing work, started making different friends</p>
+								<p>He's sleeping in the daytime now, and he never comes around</p>
+								<p>They said he moved to the east side, and he bought himself a gun</p>
+								<p>And now he's getting high, but he aint having any funny</p>
+							</div>
+
+							<div class="stanza">
+								<p>Somebody saw him in the bottom, tearing copper from the wall</p>
+								<p>Said nobody calls him Sonny anymore, but then nobody ever calls</p>
+							</div>
+
+							<div class="stanza">
+								<p>Sonny son, Sonny don't give In</p>
+								<p>It's no business of mine, my brother where you've been</p>
+								<p>Reckless heart, lord knows the shape you're in</p>
+								<p>To wake up in the cold every morning, go out and do it all again</p>
+							</div>
+
+							<div class="stanza">
+								<p>He went and got him a job in North Dakota, up there working on the shale</p>
+								<p>Fitting pipe on a night crew, he said, least it kept him out of jail</p>
+								<p>He did alright for a month or two, looking better every day</p>
+								<p>But then they started talking layoffs and he was out of luck again</p>
+							</div>
+
+							<div class="stanza">
+								<p>There was money on the table, there was hands up in the air</p>
+								<p>They said now hey man think it over, all he said was I don't care</p>
+							</div>
+
+							<div class="stanza">
+								<p>Sonny son, Sonny don't give In</p>
+								<p>It's no business of mine, my brother where you've been</p>
+								<p>Reckless heart, lord knows the shape you're in</p>
+								<p>To wake up in the cold every morning, go out and do it all again</p>
+							</div>
+
+							<div class="stanza">
+								<p>Lord I wish this was just a story, how I wish it was a dream</p>
+								<p>How I wish that everybody didn't already know just exactly what I mean</p>
+								<p>Sonny we're still thinking of you though you may be on the run</p>
+								<p>Just hope you know you are forgiven, no matter what you've done</p>
+							</div>
+						</div>
+
+						<div class="song">
+							<p class="number">10</p>
+							<div class="song-title">
+								Hotel Lafayette
+							</div>
+
+							<div class="stanza">
+								<p>When we came out west we were looking for something</p>
+								<p>What it was now is anybody's guess</p>
+								<p>You found a whole new you with a dude that wasn't me</p>
+								<p>I found the Hotel Lafayette</p>
+							</div>
+
+							<div class="stanza">
+								<p>Ive been down at the Lafayette</p>
+								<p>35 a night for a sink and twin bed</p>
+								<p>I've been feeling real rough but I not dead yet</p>
+								<p>I've just been down at the Lafayette</p>
+							</div>
+
+							<div class="stanza">
+								<p>I thought I knew blue till I ran across you</p>
+								<p>And your indifference showed me new depths</p>
+								<p>You threw me down a hole when you left me</p>
+								<p>And I haven't found the bottom of it yet</p>
+							</div>
+
+							<div class="stanza">
+								<p>Ive just been down at the Lafayette</p>
+								<p>35 a night for a sink and twin bed</p>
+								<p>I've been feeling real rough but I not dead yet</p>
+								<p>I've just been down at the Lafayette</p>
+							</div>
+
+							<div class="stanza">
+								<p>Well the manager came and he yelled through the door</p>
+								<p>He said boy you better pay what you owe</p>
+								<p>I said I would have paid today cause I just got my check</p>
+								<p>Aw but don't you know the banks were all closed</p>
+							</div>
+
+							<div class="stanza">
+								<p>I ran out in the middle of the night </p>
+								<p>But you know I didn't have to run far</p>
+								<p>I just took a little stroll about a mile down the road</p>
+								<p>Where the sign says Lafayette park</p>
+							</div>
+
+							<div class="stanza">
+								<p>And i've been down at the Lafayette</p>
+								<p>Looking for a spot for to lay my head</p>
+								<p>I've been feeling real rough but I not dead yet</p>
+								<p>I've just been down at the Lafayette</p>
+								<p>I've just been down at the Lafayette</p>
+								<p>I've just been down at the Lafayette</p>
+								<p>Lafayette...Lafayette...Lafayette</p>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+
+
+	</div>
+
+</div>
