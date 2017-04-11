@@ -1,18 +1,41 @@
 ﻿@{
-    ViewBag.Title = "Weatherchime";
+    ViewBag.Title = "Music";
 }
 
 <script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
 <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css">
 <style>
-	.body-content {
-		padding-top: 30px;
-	}
+
 
 	.albumLinks a {
 		display: block;
 	}
+
+	.song {
+    margin: 25px 0 35px;
+}
+
+.song-title , .number{
+    font-weight: bold;
+    text-align: center;
+}
+
+.panel-body.lyrics .song-title{
+    padding-bottom: 10px;
+}
+.to-top {
+	cursor: pointer;
+
+}
+.body-content .col-sm-12 {
+	padding: 0;
+
+}
+
+.annotation {
+    font-size: 0.8em;
+}
 </style>
 <div class="container  body-content">
 	<div class=col-md-6 col-sm-12"">
@@ -22,8 +45,8 @@
 		<h1>New Album!!</h1>
 		@*<iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/16324890&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>*@
 		<div class="albumLinks">
+			<a href="https://riadosa.bandcamp.com/">BandCamp</a>			
 			<a href="https://www.soundcloud.com/riadosa">Soundcloud</a>
-			<a href="https://riadosa.bandcamp.com/">BandCamp</a>
 			<p>Coming soon to streaming!</p>
 		</div>
 	</div>
@@ -33,23 +56,24 @@
 				<div class="panel-heading">
 					<h4 class="panel-title">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-							Album Credits
+							Credits
 						</a>
 					</h4>
 				</div>
 				<div id="collapse1" class="panel-collapse collapse">
 					<div class="panel-body">
-						<div>
-							<div>
-								<div>Album art by EvanK! with digital assistance from Dax</div> 
-								<div>All songs by Trevor Williams except where noted</div>
+							<div class="song">
+								<div>All songs Written and Recorded by Trevor Williams except where noted</div>
 								<div>Produced by Solomon Dorsey and J.P. Gilbert</div>
+								<div>Mixed and Mastered by Chris Sorem</div>
+								<div>Album Art by Evan K!</div>
+								<div>Technical Art Assistance by Dax Schaffer</div>
 							</div>
 							<div class="song">
 								<p class="number">1</p>
-								<p class="song-title">Capulin</p>
+								<p class="song-title">Anasazi Highway</p>
 								<p>Trevor: Acoustic and Electric Guitar, Vocals, Ambient Sounds</p>
-								<p>Ben Peeler: Weissenborn Guitar, Pedal Steel</p>
+								<p>Ben Peeler: Weissenborn Guitar, Steel Guitar</p>
 								<p>Solomon Dorsey: Drums, Bass</p>
 								<p>Alissa Nordmoe: Background Vocals</p>
 							</div>
@@ -57,32 +81,32 @@
 								<p class="number">2</p>
 								<p class="song-title">The Longest Train</p>
 								<p>Trevor: Vocal, Acoustic Guitar, Electric Guitar, Noises</p>
-								<p>Solomon Dorsey: Drums, Bass, Keyboards</p>
+								<p>Solomon Dorsey: Drums, Bass, Keys</p>
 								<p>Lily Maase: Electric Guitar</p>
-								<p>Ben Peeler: Pedal Steel Guitar</p>
+								<p>Ben Peeler: Steel Guitar</p>
 								<p>Alissa Nordmoe: Background Vocals</p>
 							</div>
 							<div class="song">
 								<p class="number">3</p>
-								<p class="song-title">86 Cadillac DeVille(Anodyne)</p>
+								<p class="song-title">'86 Cadillac DeVille(Anodyne)</p>
 								<p>Trevor: Vocals, Acoustic Guitar, Harmonica, Tumbii, Rainstick, Tambourine, Bass</p>
 								<p>Tim Monaghan: Drums</p>
 								<p>JP Gilbert: Electric Guitar</p>
-								<p>Ben Peeler: Pedal Steel Guitar</p>
+								<p>Ben Peeler: Steel Guitar</p>
 								<p>Alex Hills: Keys</p>
 							</div>
 							<div class="song">
 								<p class="number">4</p>
 								<p class="song-title">Me and Jeff(Train 45)</p>
-								<p>Trevor Williams: Vocal, Guitar</p>
-							</div>
+								<p>Trevor Williams: Vocal, Guitar, Harmonica, Ambient Sounds</p>
+							</div> 
 							<div class="song">
 								<p class="number">5</p>
 								<p class="song-title">Everyone’s a Lightweight(Except for me)</p>
-								<p>Trevor Williams: Acoustic and Electric Guitar, Vocals, Bass, Other Sounds</p>
+								<p>Trevor Williams: Acoustic and Electric Guitar, Vocals, Bass, Sounds</p>
 								<p>Alissa Nordmoe: Background Vocals</p>
 								<p>Ezer Lichtenstein: Drums</p>
-								<p>Alex Hills: Keyboards</p>
+								<p>Alex Hills: Keys</p>
 								<p>Lily Maase: Electric Guitar</p>
 								<p>JP Gilbert: Electric Guitar</p>
 							</div>
@@ -91,7 +115,7 @@
 								<p class="song-title">Stay Right Here With You</p>
 								<p>Trevor: Vocal, Acoustic Guitar, Bass</p>
 								<p>Leslie Stevens: Vocal</p>
-								<p>Alex Hills: Keyboards</p>
+								<p>Alex Hills: Keys</p>
 								<p>JP Gilbert: Electric Guitar</p>
 								<p>Ben Peeler: Steel Guitar</p>
 								<p>Tim Monaghan: Drums</p>
@@ -104,7 +128,7 @@
 								<p>Tim Monaghan: Drums</p>
 								<p>Alex Hills: Keyboards</p>
 								<p>Alissa Nordmoe: Background Vocals</p>
-								<p>Nick Gonzales: Background Vocals, chorus melody</p>
+								<p>Nick Gonzales: Background Vocals, Verse Melody</p>
 							</div>
 							<div class="song">
 								<p class="number">8</p>
@@ -117,7 +141,7 @@
 							<div class="song">
 								<p class="number">9</p>
 								<p class="song-title">Sonny</p>
-								<p>Trevor: Vocals, Acoustic Guitar, Pedal Steel, Noises</p>
+								<p>Trevor: Vocals, Acoustic Guitar, Lap Steel, Noises</p>
 								<p>Solomon Dorsey: Drums, Electric Guitar, Tenor Guitar, Bass</p>
 								<p>JP Gilbert: Electric Guitar</p>
 							</div>
@@ -129,8 +153,10 @@
 								<p>Brian Kamerer: Ambient Sounds</p>
 								<p>Alissa Nordmoe: Background Vocals</p>
 								<p>Solomon Dorsey: Background Vocals</p>
+								<p>Nick Gonzales: Outro Bass</p>
 							</div>							
-						</div>
+						<div class="to-top pull-right">Back to top</div>
+
 					</div>
 				</div>
 			</div>
@@ -143,7 +169,7 @@
 					</h4>
 				</div>
 				<div id="collapse2" class="panel-collapse collapse">
-					<div class="panel-body">
+					<div class="panel-body lyrics">
 						<div class="song">
 							<p class="number">1</p>
 							<div class="song-title">
@@ -152,13 +178,13 @@
 
 							<div class="stanza">
 								<p>We were born in the shadows of the sleeping Capulin, might have been a thousand dusty years ago</p>
-								<p>And our mother was the mountain she was ornery and mean and was all that we could do for getting out there</p>
-								<p>So we lighted out one Sunday rolling on a winter's storm and we floated all the way down in to Clayton</p>
+								<p>And our mother was the mountain she was ornery and mean and it was all that we could do for getting out of there</p>
+								<p>So we lighted out one Sunday rolling on a winter's storm and we floated all the way down into Clayton</p>
 								<p>And the streets were dark and empty and the courthouse sulked and loomed, but to us it was the stuff of revelation</p>
 							</div>
 
 							<div class="stanza">
-								<p>So we hired on washing dishes down at the old Hotel you know the one with the pictures of the Hanging*</p>
+								<p>So we hired on washing dishes down at the old Hotel you know the one with the pictures of the hanging*</p>
 								<p>And we lived on green chile and what we borrowed from the bar and it was always only just enough to make it</p>
 								<p>Ah but the folks all drank their coffee and smoked their big cigars and talked about the trains that they were taking</p>
 								<p>4:15 to Colorado, 9:05 to Santa Fe it was a big wide world out there beyond our station</p>
@@ -189,7 +215,7 @@
 							</div>
 
 							<div class="stanza">
-								<p>*Pictures of the hanging of the notorious outlaw Black Jack Ketchum in Clayton, NM. </p>
+								<p class="annotation">*Pictures of the hanging of the notorious outlaw Black Jack Ketchum in Clayton, NM in the year 1901. </p>
 							</div>
 						</div>
 
@@ -342,7 +368,7 @@
 
 							<div class="stanza">
 								<p>Everybody freaks when you spend a night in jail, yeah, saying maybe take a minute, get yourself together</p>
-								<p>And you can keep it yeah but I know you got your stuff, And I don't have a problem I'm not yet well aware of</p>
+								<p>And you can keep it hid yeah but I know you got your stuff, And I don't have a problem I'm not yet well aware of</p>
 							</div>
 
 							<div class="stanza">
@@ -357,7 +383,7 @@
 
 							<div class="stanza">
 								<p>Everyone's a lightweight except for me, Dad. I told em what you told me but they don't wanna hear that</p>
-								<p>Everybody bails when it gets a little real, huh. Everyone's a lightweight, but everybody begs and everybody steals sometimes</p>
+								<p>Everybody bails when it gets a little real, huh. But everybody begs and everybody steals sometimes</p>
 							</div>
 
 							<div class="stanza">
@@ -440,7 +466,7 @@
 							<div class="stanza">
 								<p>I got a real funny feeling, I'm going out of town awhile</p>
 								<p>And I'm talking ten thousand if I make a single mile</p>
-								<p>I see a palm desert trailer, I see the shores of hudson bay</p>
+								<p>I see a Palm Desert trailer, I see the shores of Hudson Bay</p>
 								<p>I could be saving all my money or maybe pissing it away</p>
 							</div>
 							<div class="stanza">
@@ -482,7 +508,7 @@
 							</div>
 							<div class="stanza">
 								<p>Walking home from church on wednesday night, she fell out on the ground and at the age of 85 she passed before the week was out</p>
-								<p>And the sold her home at auction 'cause she had no next of kin and they hauled her junk of to the dump so someone else could move theirs in</p>
+								<p>And they sold her home at auction 'cause she had no next of kin and they hauled her junk off to the dump so someone else could move theirs in</p>
 							</div>
 							<div class="stanza">
 								<p>Well she never got her tenure, never held a PhD and she gave up thinking years ago true love would set her free</p>
@@ -500,7 +526,7 @@
 							</div>
 
 							<div class="stanza">
-								<p>Ya'll know Sonny, my older brother's best friends</p>
+								<p>Ya'll know Sonny, my older brother's best friend</p>
 								<p>Always showed us what he could he was the definition of a sweet sweet man</p>
 								<p>Bout the time we finished high school, they were still just hanging round</p>
 								<p>He started coming unraveled, all we could say was such a shame</p>
@@ -515,7 +541,7 @@
 								<p>Well he started missing work, started making different friends</p>
 								<p>He's sleeping in the daytime now, and he never comes around</p>
 								<p>They said he moved to the east side, and he bought himself a gun</p>
-								<p>And now he's getting high, but he aint having any funny</p>
+								<p>And now he's getting high, but he aint having any fun</p>
 							</div>
 
 							<div class="stanza">
@@ -615,16 +641,24 @@
 								<p>Lafayette...Lafayette...Lafayette</p>
 							</div>
 						</div>
+						<div class="to-top pull-right">Back to top</div>
 
 
 					</div>
 				</div>
 			</div>
-			
 		</div>
 		
 
 
 	</div>
-
 </div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(".to-top").on("click", function () {
+			$(window).scrollTop(0);
+		})
+	});
+
+</script>
